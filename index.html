@@ -155,17 +155,19 @@
             </div>
             <!-- access -->
             <div
-                class="md:max-w-[55rem] w-full bg-c_intro_email_bg flex flex-col items-center md:px-12 px-6 py-8 rounded-lg gap-4 translate-y-[50%]">
+                class="md:max-w-[55rem] w-full bg-c_intro_email_bg flex flex-col items-center md:px-12 px-6 py-8 rounded-lg gap-5 translate-y-[50%]">
                 <h2 class="font-heading_btn_nav text-white font-bold md:text-3xl text-xl">Get early access today</h2>
                 <p class="text-white text-center md:text-[1rem] text-sm">
                     It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
                     questions, our support team would be happy to help you.
                 </p>
-                <div class="flex items-center md:flex-row flex-col w-full md:gap-6 gap-4 pt-4">
-                    <input type="text" class="bg-white rounded-full md:w-fit w-full min-w-0 flex-grow text-xs py-3 outline-none px-6"
+                <div class="flex items-center relative md:flex-row flex-col w-full md:gap-6 gap-4 pt-4">
+                    <input type="text" id="email-input" class="bg-white rounded-full md:w-fit w-full min-w-0 flex-grow text-xs py-3 outline-none px-6"
                         placeholder="email@example.com" />
+                    <span style="display: none;" id="error-msg" class="absolute text-c_error_red text-[0.5rem] md:top-[3.8rem] -top-[0.15rem] left-6">Please enter a valid email address</span>
                     <div class="rounded-full overflow-hidden bg-gradient-to-r from-c_btn_bg_g_1 to-c_btn_bg_g_2 md:w-fit w-full">
                         <button
+                            id="submit-email"
                             class="px-8 py-3 bg-transparent hover:bg-c_btn_bg_g_1 font-heading_btn_nav text-white transition md:w-fit text-center w-full text-xs font-bold">Get
                             Started For Free</button>
                     </div>
